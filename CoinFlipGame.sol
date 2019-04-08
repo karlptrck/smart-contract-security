@@ -17,11 +17,7 @@ contract CoinFlipGame {
     }
     
     function generateRandomBit() private view returns(bool) {
-        if(random() % 2 == 0){
-            return false;
-        }else{
-            return true;
-        }
+        if(random() % 2 == 0) return false : return true;
     }
     
     function random() private view returns (uint8) {
